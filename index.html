@@ -7,11 +7,12 @@
     <link rel="stylesheet" href="styles/bootstrap.min.css">
 </head>
 <body>
-    <nav class="navbar navbar-light bg-dark">
+    <nav class="navbar navbar-light bg-light">
         <a href="/" class="navbar-brand">
-            prodruct app
+            Product App
         </a>
     </nav>
+
     <div class="container">
         <div id="app" class="row pt-5">
             <div class="col-md-4">
@@ -26,23 +27,23 @@
                         </div>
                         <div class="form-group">
                             <label>Product cost per piece</label>
-                            <input type="text" id="price" step="0.1" placeholder="price" class="form-control">
+                            <input type="number" id="price" step="0.01" placeholder="Price" class="form-control">
                         </div>
                         <div class="form-group">
-                            <label>Product quantity</label>
-                            <input type="text" id="quantity" placeholder="quantity" class="form-control">
+                            <label>Product Quantity</label>
+                            <input type="number" id="quantity" placeholder="Quantity" class="form-control">
                         </div>
                         <div class="form-group">
                             <label>Product Date</label>
-                            <input type="text" id="year" class="form-control">
+                            <input type="date" id="year" class="form-control">
                         </div>
-                        <input type="button" value="Save" class="btn_ btn_primary btn-block">
+                        <input type="submit" value="Save" class="btn btn-primary btn-block">
                     </form>
                 </div>
             </div>
             <div id="product-list" class="col-md-8"></div>
         </div>
-
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
